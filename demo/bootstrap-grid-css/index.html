@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Bootstrap Grid-only</title>
+<meta name="description" content="The grid and responsive utilities classes extracted from the Bootstrap 4 framework, compiled into CSS." />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" />
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" />
+<link rel="stylesheet" href="https://rawcdn.githack.com/dmhendricks/bootstrap-grid-css/develop/dist/css/bootstrap-grid.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css" />
+<link rel="stylesheet" href="https://rawcdn.githack.com/jablonczay/code-box-copy/master/code-box-copy/css/code-box-copy.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SocialIcons/1.0.1/soc.min.css" />
+<link rel="stylesheet" href="demo.css" />
+</head>
+
+<body>
+  <a class="sr-only" href="#content">Skip to main content</a>
+
+  <div id="layout" class="pure-g">
+      <div class="sidebar pure-u-1 pure-u-md-1-4">
+          <div class="header">
+              <h1 class="brand-title">Bootstrap Grid CSS</h1>
+              <h2 class="brand-tagline">Compiled from official release</h2>
+
+              <nav class="nav">
+                  <ul class="nav-list">
+                      <li class="nav-item">
+                          <a class="pure-button" href="https://github.com/dmhendricks/bootstrap-grid-css">GitHub</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="pure-button" href="https://www.npmjs.com/package/bootstrap-grid-css">NPM</a>
+                      </li>
+                  </ul>
+
+                  <p class="copyright-notice">
+                    <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> is copyright &copy;2011-2018 the
+                    <a href="https://github.com/twbs/bootstrap/graphs/contributors" target="_blank">Bootstrap Authors</a> and <a href="https://twitter.com" target="_blank">Twitter, Inc.</a>,
+                    released under the <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT License</a>. This fork and its creator have
+                    <strong><em>no affiliation</em></strong> with Twitter, Inc. or the original authors.</p>
+
+              </nav>
+          </div>
+      </div>
+
+      <div class="content pure-u-1 pure-u-md-3-4">
+          <div id="content">
+
+            <div id="google_translate_element"></div>
+            <h1 class="headline">Bootstrap Grid CSS</h1>
+            <p class="subheading">Compiled by <a href="https://www.danhendricks.com/" target="_blank">Daniel M. Hendricks</a></p>
+
+            <p>The grid system extracted from the Bootstrap 4 framework (with CSS wrapper class), compiled into CSS. The responsive utilities from alpha were also ported for convenience.</p>
+
+            <h2>Intent</h2>
+
+            <p>
+              I often have to work on web sites that do not have a grid system in place. To minimize time by not reinventing a wheel, I prefer to
+              include a framework for grid tasks.
+            </p>
+
+            <p>
+              While there are several grid-only CSS frameworks out there, Bootstrap is convenient if you are familiar with its conventions. However,
+              the full framework also interferes with design. Other frameworks often use generic class names like "row" and "container" without any
+              sort of wrapper to target only those within the grid.
+            </p>
+
+            <h2>Basic Usage</h2>
+
+            <div class="code-box-copy">
+              <button class="code-box-copy__btn" data-clipboard-target="#grid_example" title="Copy"></button>
+              <pre><code class="language-html" id="grid_example">&lt;div class=&quot;bootstrap-wrapper&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-4&quot;&gt;.col-md-4&lt;/div&gt;
+      &lt;div class=&quot;col-sm-4&quot;&gt;.col-md-4&lt;/div&gt;
+      &lt;div class=&quot;col-sm-4&quot;&gt;.col-md-4&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row hidden-sm-down&quot;&gt; &lt;!-- Hidden on small screens --&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-3 col-xs-12&quot;&gt;&lt;img src=&quot;https://via.placeholder.com/1000x700?text=.img-fluid&quot; class=&quot;img-fluid&quot; alt=&quot;Responsive Image Demo&quot; /&gt;&lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 col-xs-12&quot;&gt;&lt;img src=&quot;https://via.placeholder.com/1000x700&quot; class=&quot;img-fluid&quot; alt=&quot;Responsive Image Demo&quot; /&gt;&lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 col-xs-12&quot;&gt;&lt;img src=&quot;https://via.placeholder.com/1000x700?text=.img-fluid&quot; class=&quot;img-fluid&quot; alt=&quot;Responsive Image Demo&quot; /&gt;&lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 col-xs-12&quot;&gt;&lt;img src=&quot;https://via.placeholder.com/1000x700&quot; class=&quot;img-fluid&quot; alt=&quot;Responsive Image Demo&quot; /&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre></code>
+
+            <h3>Result</h3>
+
+            <div class="bootstrap-wrapper">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-4">.col-md-4</div>
+                  <div class="col-sm-4">.col-md-4</div>
+                  <div class="col-sm-4">.col-md-4</div>
+                </div>
+                <div class="row hidden-sm-down"> <!-- Hidden on small screens -->
+                  <div class="col-md-6">.col-md-6</div>
+                  <div class="col-md-6">.col-md-6</div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-3 col-xs-12">
+                    <img src="https://via.placeholder.com/1000x700?text=.img-fluid" class="img-fluid" alt="Responsive Image Example" />
+                  </div>
+                  <div class="col-sm-3 col-xs-12">
+                    <img src="https://via.placeholder.com/1000x700" class="img-fluid" alt="Responsive Image Example" />
+                  </div>
+                  <div class="col-sm-3 col-xs-12">
+                    <img src="https://via.placeholder.com/1000x700?text=.img-fluid" class="img-fluid" alt="Responsive Image Example" />
+                  </div>
+                  <div class="col-sm-3 col-xs-12">
+                    <img src="https://via.placeholder.com/1000x700" class="img-fluid" alt="Responsive Image Example" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p>
+
+            <h2>Further Reading</h2>
+
+            <p>For more examples, see the official documentation:</p>
+
+            <ul>
+              <li><a href="https://getbootstrap.com/docs/4.1/layout/grid/">Grid System</a></li>
+              <li><a href="https://v4-alpha.getbootstrap.com/layout/responsive-utilities/">Responsive Utilities</a> (alpha)</li>
+            </ul>
+
+            <footer>
+                <div class="pure-menu pure-menu-horizontal">
+
+                  <div class="soc">
+                    <a href="https://github.com/dmhendricks" class="soc-github" title="GitHub"></a>
+                    <a href="http://twitter.com/danielhendricks" class="soc-twitter" title="Twitter"></a>
+                    <a href="http://www.linkedin.com/in/dmhendricks" class="soc-linkedin" title="LinkedIn"></a>
+                    <a href="http://plus.google.com/u/0/101736733360609110645" class="soc-google" title="Google Plus"></a>
+                    <a href="https://profiles.wordpress.org/hendridm" class="soc-wordpress" title="WordPress"></a>
+                  </div>
+
+                </div>
+            </footer>
+
+          </div>
+      </div>
+  </div>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67333102-2"></script>
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-67333102-2");</script>
+
+  <!-- Other Third-party JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/toolbar/prism-toolbar.min.js"></script>
+  <script src="https://rawcdn.githack.com/jablonczay/code-box-copy/master/clipboard/clipboard.min.js"></script>
+  <script src="https://rawcdn.githack.com/jablonczay/code-box-copy/master/code-box-copy/js/code-box-copy.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/SocialIcons/1.0.1/soc.min.js"></script>
+
+  <!-- Google Translate -->
+  <script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element'); }</script>
+
+  <!-- Copy to Clipboard -->
+  <script>(function($) { $('.code-box-copy').codeBoxCopy(); })( window.jQuery );</script>
+
+</body>
+
+</html>
