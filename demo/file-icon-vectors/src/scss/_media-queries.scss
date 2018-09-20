@@ -1,0 +1,31 @@
+/* Media Queries */
+@media (min-width: 48em) {
+    .content {
+        padding: 2em 3em 0;
+        margin-left: 25%;
+    }
+
+    .header {
+        margin: 4em 2em 0;
+        text-align: right;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+
+}
+
+@media (max-width: 575px) {
+  img.img-fluid {
+    margin-top: 1.5em;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav .copyright-notice {
+    margin: 1em;
+  }
+}
