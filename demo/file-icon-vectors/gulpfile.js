@@ -10,7 +10,6 @@ var pkg           = require( './package.json' );
 var gulp          = require( 'gulp' );
 var rename        = require( 'gulp-rename' );
 var minifycss     = require( 'gulp-uglifycss' );
-var imagemin      = require( 'gulp-imagemin' );
 var sass          = require( 'gulp-sass' );
 var autoprefixer  = require( 'gulp-autoprefixer' );
 var cache         = require( 'gulp-cache' );
