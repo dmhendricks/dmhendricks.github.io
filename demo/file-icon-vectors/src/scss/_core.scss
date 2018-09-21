@@ -52,21 +52,26 @@
     font-size: 1.2em;
   }
 
-  .pure-g {
-
-    & > div {
-      text-align: center;
-    }
-
-  }
-
 }
 
-#icon_container {
+#icons {
+  .pure-form {
+    fieldset {
+      padding-bottom: 0px;
+    }
+  }
+}
+
+#icon_grid {
 
   & > div {
     margin-top: 1.25em;
   }
+
+  * {
+    text-align: center;
+  }
+
 }
 
 /* Dark Mode */
@@ -84,6 +89,10 @@ body.dark-mode {
     h1, h2, h3, h4 {
       color: #f6f6f6;
     }
+  }
+  input[type="search"] {
+    background-color: #444;
+    box-shadow: none;
   }
   &.dark-mode, &.dark-mode {
     &, p, li {

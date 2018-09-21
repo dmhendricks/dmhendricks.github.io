@@ -56,12 +56,16 @@
   font-size: 1.2em;
 }
 
-#container .pure-g > div {
-  text-align: center;
+#icons .pure-form fieldset {
+  padding-bottom: 0px;
 }
 
-#icon_container > div {
+#icon_grid > div {
   margin-top: 1.25em;
+}
+
+#icon_grid * {
+  text-align: center;
 }
 
 /* Dark Mode */
@@ -79,6 +83,12 @@ body.dark-mode #container tt {
 
 body.dark-mode #container h1, body.dark-mode #container h2, body.dark-mode #container h3, body.dark-mode #container h4 {
   color: #f6f6f6;
+}
+
+body.dark-mode input[type="search"] {
+  background-color: #444;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 body.dark-mode.dark-mode, body.dark-mode.dark-mode p, body.dark-mode.dark-mode li, body.dark-mode.dark-mode, body.dark-mode.dark-mode p, body.dark-mode.dark-mode li {
