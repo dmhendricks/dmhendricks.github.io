@@ -101,6 +101,15 @@ footer .soc a:hover {
   text-decoration: none;
 }
 
+footer .copyright {
+  font-size: 0.85em;
+}
+
+footer .copyright a {
+  font-size: 1em;
+  color: #3d92c9;
+}
+
 .icon-desc {
   font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif;
   text-transform: uppercase;
