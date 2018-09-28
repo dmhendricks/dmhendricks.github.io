@@ -49,7 +49,7 @@ gulp.task( 'demo-js', function() {
 		.pipe( rename( {
       suffix: '.min'
     }))
-		//.pipe( uglify() )
+		.pipe( uglify() )
     .pipe( lineec() )
     .pipe( gulp.dest( './assets/js' ) )
     .pipe( notify( { message: 'TASK: "demo-js" completed.', onLast: true } ) );
