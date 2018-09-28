@@ -1,18 +1,10 @@
 {
-  "name": "file-icon-vectors",
+  "name": "dmhendricks-github-io",
   "description": "A collection of file type SVG icons, licensed MIT and available for free use in your applications.",
   "author": "Daniel M. Hendricks",
   "version": "1.0.0",
   "license": "MIT",
-  "keywords": [
-    "file",
-    "icons",
-    "vectors",
-    "svg",
-    "css",
-    "sass",
-    "logo"
-  ],
+  "keywords": [ "file", "icons", "vectors", "svg", "css" ],
   "devDependencies": {
     "gulp": "^4.0",
     "gulp-autoprefixer": "^4.1.0",
@@ -26,8 +18,12 @@
     "gulp-uglify": "^3.0.0",
     "gulp-uglifycss": "^1.1.0"
   },
+  "homepage": "https://fileicons.org/",
+  "bugs": {
+    "url": "https://github.com/dmhendricks/dmhendricks.github.io/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dmhendricks/file-icon-vectors.git"
+    "url": "git://github.com/dmhendricks/dmhendricks.github.io.git"
   }
 }
