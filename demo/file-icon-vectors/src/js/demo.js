@@ -50,11 +50,11 @@
       'version': '1.0.0',
       'icon-count': {
         'release': '1170',
-        'develop': '1188+'
+        'develop': '1500+'
       },
       'set-count': {
         'release': '3',
-        'develop': '4'
+        'develop': '5'
       }
     },
     url_prefix: {
@@ -147,7 +147,7 @@
       ICON_NS.Core.toggletUriAttr( 'mode', 'dark' );
 
     },
-    setUriAttr( id, val ) {
+    setUriAttr: function( id, val ) {
 
       val = val || 'true';
       uri = URI();
@@ -155,7 +155,7 @@
       window.history.pushState( null, null, uri.toString() );
 
     },
-    removeUriAttr( id ) {
+    removeUriAttr: function( id ) {
 
       uri = URI();
       uri.removeQuery( id );
