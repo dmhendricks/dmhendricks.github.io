@@ -18,15 +18,14 @@
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#404F5C" />
   <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-  <link rel='dns-prefetch' href='//unpkg.com' />
+  <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
   <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
   <link rel='dns-prefetch' href='//rawcdn.githack.com' />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/purecss@1.0.0/build/pure-min.css,npm/purecss@1.0.0/build/grids-responsive-min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.min.css" />
-  <link rel="stylesheet" href="https://rawcdn.githack.com/atelierbram/syntax-highlighting/master/prism/demo/assets/css/prism-base16-brewer.light.css" />
-  <link rel="stylesheet" href="https://rawcdn.githack.com/jablonczay/code-box-copy/master/code-box-copy/css/code-box-copy.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/atelierbram/syntax-highlighting@fd938fcb64cb2916b09cd9a67376db811ac3439c/prism/demo/assets/css/prism-base16-brewer.light.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jablonczay/code-box-copy@2cc598da3bfe921cfb5a032be2ae1aae1eca4076/code-box-copy/css/code-box-copy.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SocialIcons/1.0.1/soc.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/file-icon-vectors@1.0.0/dist/file-icon-vectors.min.css" id="source" />
   <link rel="stylesheet" href="assets/css/demo.css" />
@@ -132,7 +131,7 @@
 
               <div class="code-box-copy">
                 <button class="code-box-copy__btn" data-clipboard-target="#code_linking" title="Copy"></button>
-                <pre><code class="language-html code-example">
+                <pre><code class="language-html code-example" id="code_linking">
                   &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/file-icon-classic.min.css&quot; /&gt;
                   &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/file-icon-square-o.min.css&quot; /&gt;
                   &lt;link rel=&quot;stylesheet&quot; href=&quot;dist/file-icon-vivid.min.css&quot; /&gt;
@@ -147,7 +146,7 @@
 
                 <div class="code-box-copy">
                   <button class="code-box-copy__btn" data-clipboard-target="#code_cdn_release" title="Copy"></button>
-                  <pre><code class="language-html code-example">
+                  <pre><code class="language-html code-example" id="code_cdn_release">
                     &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/npm/file-icon-vectors@1.0.0/dist/file-icon-classic.min.css&quot; /&gt;
                     &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/npm/file-icon-vectors@1.0.0/dist/file-icon-square-o.min.css&quot; /&gt;
                     &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/npm/file-icon-vectors@1.0.0/dist/file-icon-vivid.min.css&quot; /&gt;
@@ -158,6 +157,19 @@
                 </div>
               </div>
 
+              <div class="branch-release">
+
+                <p>jsDeliver allows you combine multiple files. Below is an example of linking both the Vivid and Square Outline sets with one link:</p>
+
+                <div class="code-box-copy">
+                  <button class="code-box-copy__btn" data-clipboard-target="#code_cdn_combine_release" title="Copy"></button>
+                  <pre><code class="language-html code-example" id="code_cdn_combine_release">
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.jsdelivr.net/combine/npm/file-icon-vectors@1.0.0/dist/file-icon-vivid.min.css,npm/file-icon-vectors@1.0.0/dist/file-icon-square-o.min.css&quot; /&gt;
+                  </pre></code>
+                </div>
+
+              </div>
+
               <div id="cdn_develop" class="section-cdn branch-develop">
                 <h3>CDN: GitHack</h3>
 
@@ -165,7 +177,7 @@
 
                 <div class="code-box-copy">
                   <button class="code-box-copy__btn" data-clipboard-target="#code_cdn_develop" title="Copy"></button>
-                  <pre><code class="language-html code-example">
+                  <pre><code class="language-html code-example" id="code_cdn_develop">
                     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://rawcdn.githack.com/dmhendricks/file-icon-vectors/master/dist/file-icon-classic.min.css&quot; /&gt;
                     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://rawcdn.githack.com/dmhendricks/file-icon-vectors/master/dist/file-icon-square-o.min.css&quot; /&gt;
                     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://rawcdn.githack.com/dmhendricks/file-icon-vectors/master/dist/file-icon-vivid.min.css&quot; /&gt;
@@ -192,7 +204,7 @@
 
               <div class="code-box-copy">
                 <button class="code-box-copy__btn" data-clipboard-target="#code_syntax" title="Copy"></button>
-                <pre><code class="language-html code-example">
+                <pre><code class="language-html code-example" id="code_syntax">
                   &lt;span class=&quot;fiv-cla fiv-icon-xls&quot;&gt;&lt;/span&gt;
                   &lt;span class=&quot;fiv-viv fiv-icon-pdf&quot;&gt;&lt;/span&gt;
                   &lt;span class=&quot;fiv-viv fiv-icon-wav&quot;&gt;&lt;/span&gt;
@@ -204,7 +216,7 @@
 
               <div class="code-box-copy">
                 <button class="code-box-copy__btn" data-clipboard-target="#code_override" title="Copy"></button>
-                <pre><code class="language-html code-example">
+                <pre><code class="language-html code-example" id="code_override">
                   &lt;style&gt;
                   &nbsp;&nbsp;&nbsp;.fiv-cla, .fiv-viv, .fiv-sqo { font-size: 3em; }
                   &lt;/style&gt;              </pre></code>
@@ -214,7 +226,7 @@
 
               <div class="code-box-copy">
                 <button class="code-box-copy__btn" data-clipboard-target="#code_utils" title="Copy"></button>
-                <pre><code class="language-html code-example">
+                <pre><code class="language-html code-example" id="code_utils">
                   &lt;span class=&quot;fiv-viv fiv-icon-pdf fiv-size-lg&quot;&gt;&lt;/span&gt;
                 </pre></code>
               </div>
@@ -281,10 +293,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/toolbar/prism-toolbar.min.js" type="text/javascript"></script>
-  <script src="https://rawcdn.githack.com/jablonczay/code-box-copy/master/clipboard/clipboard.min.js" type="text/javascript"></script>
-  <script src="https://rawcdn.githack.com/jablonczay/code-box-copy/master/code-box-copy/js/code-box-copy.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/combine/gh/jablonczay/code-box-copy@2cc598da3bfe921cfb5a032be2ae1aae1eca4076/clipboard/clipboard.min.js,gh/jablonczay/code-box-copy@2cc598da3bfe921cfb5a032be2ae1aae1eca4076/code-box-copy/js/code-box-copy.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/SocialIcons/1.0.1/soc.min.js" type="text/javascript"></script>
-  <script src="https://rawcdn.githack.com/azatoth/jquery-sprintf/master/jquery.sprintf.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/gh/azatoth/jquery-sprintf@7746c174b8643676dd92c56274480186b3f0bed1/jquery.sprintf.min.js" type="text/javascript"></script>
   <script src="assets/js/demo.min.js" type="text/javascript" defer="defer"></script>
 
 </body>
