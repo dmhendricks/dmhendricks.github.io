@@ -219,7 +219,7 @@
           $( this ).toggle( $( this ).text().toLowerCase().indexOf( value ) > -1 );
         });
 
-        if(!$( '.icon', _icons_grid ).filter( ':visible' ).length < 1 ) {
+        if($( '.icon', _icons_grid ).filter( ':visible' ).length < 1 ) {
           $( '#no_results' ).show();
         } else {
           $( '#no_results' ).hide();
